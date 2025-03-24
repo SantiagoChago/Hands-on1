@@ -17,6 +17,6 @@ public class MundoLaberinto{
         return new Estado(3,3,'A'); //Agente  Inicio en (3,3)
     }
     public Estado getEstadoMeta(){
-        return new Estado(0,0,'G'); // Treasure  Meta en (0,0)
+        return new Estado(0,0,'T'); // Treasure  Meta en (0,0)
     }
 }
