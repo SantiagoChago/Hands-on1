@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+
 public class Problema {
     Estado inicial;
     Estado meta;
@@ -8,6 +10,9 @@ public class Problema {
         this.inicial = inicial;
         this.meta = meta;
         this.mundo = mundo;
+    }
+    public int calcularHeuristica(Estado estado){
+        return Math.abs(estado.x-meta.x)+Math.abs(estado.y-meta.y);
     }
     public List<Estado> sucesores(Estado estado) {
         List<Estado> sucesores = new ArrayList<>();

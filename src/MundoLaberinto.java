@@ -4,7 +4,7 @@ public class MundoLaberinto{
         mundo = new char[][]{
                 {'T','S','S','P'},//fila 0
                 {'S','S','S','W'},//fila 1
-                {'P','S','S','E'},//fila 2
+                {'P','S','S','S'},//fila 2
                 {'W','P','S','A'}//fila 3
         };
         //T cordenada de meta

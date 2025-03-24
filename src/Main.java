@@ -1,5 +1,6 @@
 import java.util.List;
 
+
 public class Main {
     public static void main(String[] args) {
         MundoLaberinto mundoLaberinto =new MundoLaberinto();
@@ -14,5 +15,8 @@ public class Main {
         BusquedaBFS bfs =new BusquedaBFS();
         List<String> solucionBFS=bfs.buscar(problema);
         System.out.println("Solucion de anchura : "+(solucionBFS!=null?solucionBFS:"No encontrada"));
+        BusquedaHillClimbing hillClimbing= new BusquedaHillClimbing();
+        List<Estado> solucionHC= hillClimbing.buscar(problema);
+        System.out.println("Solucion Hill Climbing: " + solucionHC);
     }
 }
